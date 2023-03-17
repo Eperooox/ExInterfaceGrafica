@@ -7,6 +7,7 @@ public class Restaurante
     public static void main(String[] args)
     {
         Pizza pizza = new Pizza();
+
         Hamburguer hamburguer = new Hamburguer();
 
 
@@ -27,7 +28,6 @@ public class Restaurante
             pizza.valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor: "));
             pizza.borda = Boolean.parseBoolean(JOptionPane.showInputDialog("Sim/Nao"));
             JOptionPane.showInputDialog(null, "O seu pedido ficou no valor de: " + pizza.calcular(pizza.valor, pizza.borda), "Resultado", JOptionPane.QUESTION_MESSAGE);
-
         }
 
     }

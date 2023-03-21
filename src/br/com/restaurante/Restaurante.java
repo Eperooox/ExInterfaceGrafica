@@ -19,7 +19,7 @@ public class Restaurante
             hamburguer.valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor: "));
             hamburguer.artesanal = Boolean.parseBoolean(JOptionPane.showInputDialog("Sim/Nao"));
             JOptionPane.showInputDialog(null, "O seu pedido ficou no valor de: " + hamburguer.calcular(hamburguer.valor, hamburguer.artesanal), "Resultado", JOptionPane.QUESTION_MESSAGE);
-            hamburguer.retornarNome();
+            hamburguer.retNome();
         }
 
         if (menu.equals("2"))
@@ -28,6 +28,10 @@ public class Restaurante
             pizza.valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor: "));
             pizza.borda = Boolean.parseBoolean(JOptionPane.showInputDialog("Sim/Nao"));
             JOptionPane.showInputDialog(null, "O seu pedido ficou no valor de: " + pizza.calcular(pizza.valor, pizza.borda), "Resultado", JOptionPane.QUESTION_MESSAGE);
+        }
+        else
+        {
+            System.out.println("Finalizando");
         }
 
     }

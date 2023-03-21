@@ -18,4 +18,5 @@ public class Hamburguer
         return valor;
 
     }
+    public void retNome () {System.out.println(nome);}
 }

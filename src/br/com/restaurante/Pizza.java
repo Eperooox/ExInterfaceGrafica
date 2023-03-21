@@ -19,7 +19,7 @@ public class Pizza
 
     }
 
-    public void retornarNome()
+    public void retNome()
     {
         System.out.println(nome);
     }
